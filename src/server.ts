@@ -1,14 +1,4 @@
-import 'reflect-metadata'; //this will be used by database
-import express from 'express';
-import './database'; //default recognize index file
-import { router } from './routes';
-
-const app = express();
-
-// declares to server that we are going to work with json
-app.use(express.json());
-// declare to server our routes 
-app.use(router);
+import { app } from "./app";
 
 // run server with port
 app.listen(3333, () => {

@@ -1,0 +1,36 @@
+/** Teste automatizados
+ * 
+ *  1 - Testes unitários
+ *  teste realizados metodo a metodo de forma individual
+ * 
+ *  2- Testes de integração
+ *  testes realizados no acoplamento dos metodos
+ *  Ex: 
+ *  -> request -> routes -> controller -> repository (entrada do teste)
+ *  <- repository -> controller <- response (saída do teste)
+ * 
+ *  3- Ponta a Ponta (E2E) - não necessário para o backend
+ *  teste comumente utilizados para frontend
+ */
+
+/** Test Tool - jest
+ *  command = yarn jest --init
+ *  define a running test script on package.json = yes
+ *  define typescript to be used = yes
+ *  define environment = node
+ *  jugest do add coverage reports = no
+ *  define engine = V8
+ *  clean automatically instances between tests = yes
+ */
+
+// describe("First", () => {
+//     // description
+//     it("deve ser possível somar 2 numeros", () => {
+//         // expected to be realized
+//         expect(2 + 2).toBe(4);
+//     });
+//     it("deve ser possível somar 2 numeros", () => {
+//         // expected to be realized
+//         expect(2 + 2).not.toBe(5);
+//     });
+// })
